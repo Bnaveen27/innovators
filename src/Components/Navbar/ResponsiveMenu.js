@@ -15,7 +15,7 @@ const ResponsiveMenu = ({open}) => {
                 <div className='text-xl font-semibold bg-primary text-white py-10 m-6 rounded-2xl'>
                     <ul className='flex flex-col justify-center items-center gap-10'>
                        <Link to='/'>HOME</Link>
-                       <Link to='/src/Pages/About'>ABOUT</Link>
+                       <Link to='/src/Pages/Login'>ABOUT</Link>
                        <Link to='/src/Pages/Members'>MEMBERS</Link>
                        <Link to='/src/Pages/Gallery'>GALLERY</Link>
                        <Link to='/src/Pages/Contactus'>CONTACT US</Link>
