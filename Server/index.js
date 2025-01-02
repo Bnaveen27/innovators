@@ -1,7 +1,7 @@
 const express=require('express');
 const mongoose = require('mongoose');
 const cors =require('cors')
-const InnovatorsModel = require('./model/Innovators')
+const InnovatorsModel = require('./models/Innovators')
 const app=express()
 app.use(express.json())
 app.use(cors())
