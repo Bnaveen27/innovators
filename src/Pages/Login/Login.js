@@ -17,7 +17,7 @@ const Login = () => {
       .then(result => 
         {console.log(result)
           if(result.data === "Success"){
-            navigate('/src/Pages/About')
+            navigate('/About')
           }
       })
       .catch(err => console.log(err))
@@ -44,7 +44,7 @@ const Login = () => {
                   <button type="submit">Login</button>
       
                   <div className="register-link">
-                    <p>Don't have an account? <Link to='/src/Pages/Registration'>Register</Link></p>
+                    <p>Don't have an account? <Link to='/Registration'>Register</Link></p>
                   </div>
                   <div className='back-icon'>
                     <Link to="/"><IoArrowBackCircleOutline /></Link>

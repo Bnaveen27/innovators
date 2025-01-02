@@ -1,10 +1,10 @@
 import React from 'react'
-
+import aic from "../../Assets/bg.jpg";
 import './About.css'
 const About = () => {
   return (
     <div>
-      <h3>About</h3>
+        <img src={aic} className='about-img'/>
     </div>
   )
 }

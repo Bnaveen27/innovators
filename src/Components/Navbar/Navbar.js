@@ -20,10 +20,10 @@ const Navbar = () => {
           <div className='hidden md:block menu-list'>
             <ul className='menu-bar'>
                  <Link to='/' >Home</Link>
-                 <Link to='/src/Pages/About'>About</Link>
-                 <Link to='/src/Pages/Members'>Members</Link>
-                 <Link to='/src/Pages/Gallery'>Gallery</Link>
-                 <Link to='/src/Pages/Contactus'>Contact us</Link>
+                 <Link to='/About'>About</Link>
+                 <Link to='/Members'>Members</Link>
+                 <Link to='/Gallery'>Gallery</Link>
+                 <Link to='/Contactus'>Contact us</Link>
             </ul>
           </div>
           {/* icon section */}
@@ -31,7 +31,7 @@ const Navbar = () => {
             <button className='text-2xl hover:text-white duration-200 hidden md:block btn' >
               <MdManageSearch />
             </button>
-            <Link to='/src/Pages/Login'>
+            <Link to='/Login'>
              <button className='hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6 py-2 duration-200 hidden md:block'>
               Login
             </button>

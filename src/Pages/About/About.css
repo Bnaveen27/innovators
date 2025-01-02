@@ -1,0 +1,30 @@
+.about-img {
+    margin-top: 10px;
+    width: 100vw;
+    height: 90vh;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .about-img {
+        height: 70vh; /* Reduce height for tablets or medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-img {
+        height: 60vh; /* Further reduce height for smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-img {
+        height: 50vh; /* Adjust height for small phones */
+    }
+}
+
+@media (max-width: 320px) {
+    .about-img {
+        height: 40vh; /* Further adjustment for extra-small devices */
+    }
+}

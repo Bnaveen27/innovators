@@ -44,7 +44,7 @@ const Signup = () => {
             <button type="submit" >Register</button>
 
             <div className="register-link">
-              <p>Already have an account? <Link to='/src/Pages/Login'>Login</Link></p>
+              <p>Already have an account? <Link to='/Login'>Login</Link></p>
             </div>
               <div className='back-icon'>
                 <Link to="/"><IoArrowBackCircleOutline /></Link>
