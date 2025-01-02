@@ -17,7 +17,7 @@ const Login = () => {
       .then(result => 
         {console.log(result)
           if(result.data === "Success"){
-              navigate('/src/Pages/About')
+            navigate('/src/Pages/About')
           }
       })
       .catch(err => console.log(err))
