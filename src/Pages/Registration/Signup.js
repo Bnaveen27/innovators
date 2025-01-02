@@ -12,7 +12,7 @@ const Signup = () => {
   const navigate =useNavigate()
     const handleSumit=(e) => {
       e.preventDefault()
-      axios.post('http://localhost:3001/Pages/Registration/Signup',{Username,email,password})
+      axios.post('http://localhost:5000/Pages/Registration/Signup',{Username,email,password})
       .then(result => {console.log(result)
       navigate('/src/Pages/Login')
       })
