@@ -4,7 +4,8 @@ import './About.css'
 const About = () => {
   return (
     <div>
-        <img src={aic} className='about-img'/>
+       <img src={aic} alt="Description of the image" />
+
     </div>
   )
 }
