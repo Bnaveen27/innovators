@@ -142,3 +142,44 @@
     width: 100%;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 340px) {
+  .content {
+    padding: 15px;
+    margin-top: 8px;
+  }
+
+  .cont-head {
+    font-size: 20px;
+  }
+
+  .about-desk {
+    padding: 20px;
+  }
+
+  .mission-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .mission-desk {
+    padding: 15px;
+  }
+
+  .mission-titl {
+    font-size: 1.4rem;
+  }
+
+  .mission-desk p {
+    font-size: 0.95rem;
+  }
+
+  .circular-ad {
+    padding: 15px;
+  }
+
+  .circular-details a {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+}

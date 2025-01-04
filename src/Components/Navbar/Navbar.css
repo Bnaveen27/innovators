@@ -216,3 +216,85 @@
     font-size: 0.8rem;
   }
 }
+
+/* Media Query for 320px to 340px */
+@media (max-width: 340px) {
+  /* Navbar Adjustments */
+  .navbar {
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-left .college-name {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .navbar-left .tagline {
+    font-size: 0.75rem;
+  }
+
+  .navbar-left h2 {
+    font-size: 0.9rem;
+    margin-left: 0;
+  }
+
+  .navbar-right img.aaiclogo {
+    width: 60px;
+    height: auto;
+  }
+
+  /* Menu Section Adjustments */
+  .menu-sec ul {
+    gap: 8px;
+  }
+
+  .menu-sec ul a {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+
+  .menu-sec ul .li button {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  /* Reduce Gaps */
+  .menu-sec ul {
+    gap: 6px;
+  }
+
+  .menu-sec ul a {
+    font-size: 0.8rem;
+  }
+
+  .menu-sec ul .li button {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+
+  /* Adjust Font Sizes */
+  .college-name {
+    font-size: 1rem;
+  }
+
+  .tagline {
+    font-size: 0.7rem;
+  }
+
+  .text-4xl {
+    font-size: 1.8rem;
+  }
+
+  /* Improve Padding */
+  .navbar {
+    padding: 8px 10px;
+  }
+}
+

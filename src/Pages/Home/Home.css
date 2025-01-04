@@ -12,6 +12,91 @@
     width: 100vw;
     height:80vh;
   }
- 
+  @media (max-width: 1200px) {
+    .home-cont {
+      margin-top: 15px;
+    }
+  
+    .carousl {
+      padding: 10px;
+    }
+  
+    .carsu-logo {
+      height: 70vh;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home-cont {
+      margin-top: 10px;
+    }
+  
+    .carousl {
+      padding: 5px;
+    }
+  
+    .carsu-logo {
+      height: 60vh;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .home-cont {
+      margin-top: 8px;
+    }
+  
+    .carousl {
+      padding: 3px;
+    }
+  
+    .carsu-logo {
+      height: 55vh;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-cont {
+      margin-top: 5px;
+    }
+  
+    .carousl {
+      padding: 2px;
+    }
+  
+    .carsu-logo {
+      height: 50vh;
+    }
+  }
+  
+  @media (max-width: 340px) {
+    .home-cont {
+      margin-top: 4px;
+    }
+  
+    .carousl {
+      padding: 1px;
+    }
+  
+    .carsu-logo {
+      height: 45vh;
+    }
+  }
+  
+  @media (min-width: 320px) and (max-width: 340px) {
+    .home-cont {
+      margin-top: 3px;
+    }
+  
+    .carousl {
+      padding: 1px;
+    }
+  
+    .carsu-logo {
+      height: 70vh;
+      margin-top: 6px;
+  }
+
+  }
+  
 
 
