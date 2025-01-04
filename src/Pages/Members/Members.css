@@ -1,0 +1,166 @@
+/* General Styles */
+.incubation-content {
+    font-family: "Arial", sans-serif;
+    padding: 20px;
+    background-color: #f9fafe; /* Light blue background */
+    text-align: center;
+  }
+  
+  .incubation-committee {
+    margin-bottom: 20px;
+  }
+  
+  .incub-head {
+    color: #2c3e50; /* Dark blue heading color */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .title_border {
+    display: block;
+    margin: 0 auto;
+    width: 150px; /* Adjust width for the border image */
+    margin-top: 5px;
+  }
+  
+  /* Image Field */
+  .img-field {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .head-img {
+    max-width: 200px;
+    height: auto;
+    border-radius:10px;
+    border: 3px solid #e0e0e0; /* Light gray border */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Committee Grid */
+  .committee-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .committee-card {
+    background-color: #ffffff; /* White background for cards */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .member-title {
+    color: #2c3e50; /* Dark blue for titles */
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #34495e; /* Slightly lighter dark blue */
+    margin-bottom: 5px;
+  }
+  
+  .position {
+    font-size: 16px;
+    color: #7f8c8d; /* Gray for position text */
+    margin-top: 5px;
+  }
+  
+  /* Read More Button */
+  .read-more {
+    background-color: #3498db; /* Blue button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .read-more:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  /* Media Queries */
+  @media (min-width: 768px) {
+    .committee-grid {
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .img-field {
+      justify-content:center;
+      align-items: center;
+    }
+  
+    .head-img {
+      margin-right: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .incub-head {
+      font-size: 24px;
+    }
+  
+    .read-more {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .committee-card {
+      padding: 15px;
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .incub-head {
+      font-size: 20px;
+    }
+  
+    .title_border {
+      width: 100px; /* Smaller width for border image */
+    }
+  
+    .read-more {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .member-title {
+      font-size: 18px;
+    }
+  
+    .name {
+      font-size: 16px;
+    }
+  
+    .position {
+      font-size: 14px;
+    }
+  }
+  

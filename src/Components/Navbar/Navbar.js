@@ -1,61 +1,58 @@
-import React from 'react'
-import { MdManageSearch, MdMenu } from "react-icons/md";
-import ResponsiveMenu from './ResponsiveMenu';
-import './Navbar.css';
-import{Link} from 'react-router-dom';
+import React from "react";
+// import { MdMenu } from "react-icons/md";
+// import ResponsiveMenu from './ResponsiveMenu';
+import "./Navbar.css";
+import { Link } from "react-router-dom";
+import aaicLogo from "../../Assets/aic.png";
+import aacLogo from "../../Assets/logo_small.png";
 
 const Navbar = () => {
-  const [open, setOpen] = React.useState(false);
-  
+  // const [open, setOpen] = React.useState(false);
+
   return (
-    <>
-      <nav>
-        <div className="container ">
-          {/* logo section */}
-          <div className='text-2xl flex items-center gap-2 font-bold py-8'>
-            <p className='text-secondary'>AAC</p>
-            <p>INNOVATORS CLUB</p>
+    <div className="navbar-container">
+      <nav className="navbar">
+        <div className="navbar-left">
+          <img src={aacLogo} alt="Logo" className="logo" />
+          <div className="college-info">
+            <h1 className="college-name">Arul Anandar College</h1>
+            <p className="tagline">An AUTONOMOUS Institution</p>
           </div>
-          {/* menu section */}
-          <div className='hidden md:block menu-list'>
-            <ul className='menu-bar'>
-                 <Link to='/' >Home</Link>
-                 <Link to='/About'>About</Link>
-                 <Link to='/Members'>Members</Link>
-                 <Link to='/Gallery'>Gallery</Link>
-                 <Link to='/Contactus'>Contact us</Link>
-            </ul>
-          </div>
-          {/* icon section */}
-          <div className='flex items-center gap-4 '>
-            <button className='text-2xl hover:text-white duration-200 hidden md:block btn' >
-              <MdManageSearch />
-            </button>
-            <Link to='/Login'>
-             <button className='hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6 py-2 duration-200 hidden md:block'>
-              Login
-            </button>
-            </Link>
-            {/* <Link to='/src/Pages/Registration'>
-            <button className='hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6 py-2 duration-200 hidden md:block'>
-              Sign up
-            </button></Link> */}
-
-          </div>
-
-          {/* mobile hamburger menu section */}
-
-          <div className='md:hidden' onClick={() => setOpen(!open)}>
-            <MdMenu className='text-4xl' />
-          </div>
+              <h2 className="hidden md:block">AAC INCUBATION PORTAL</h2>
         </div>
+        <div className="navbar-right hidden md:block">
+          <img src={aaicLogo} alt="aaic-logo" className="aaiclogo" />
+        </div>
+
+        {/* <div className="md:hidden" onClick={() => setOpen(!open)}>
+          <MdMenu className="text-4xl" />
+        </div> */}
       </nav>
       {/* mobile sidebar section */}
-      <ResponsiveMenu open={open} />
+      {/* <ResponsiveMenu open={open} /> */}
+      <div className="menu-sec">
+        <ul>
+          <Link to="/Home">Home</Link>
+          <Link to="/About">About</Link>
+          <Link to="/Members" className="li">
+            Members
+          </Link>
+          <Link to="/Gallery" className="li">
+            Gallery
+          </Link>
 
-    </>
-
+          <Link to="/Reports" className="li">
+            Reports
+          </Link>
+          {/* <div className="log-sec">           */}
+          <button className="admin-log">
+            <Link to="/Login">Admin Login</Link>
+          </button>
+          {/* </div> */}
+        </ul>
+      </div>
+    </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

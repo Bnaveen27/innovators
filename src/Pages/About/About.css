@@ -1,30 +1,144 @@
-.about-img {
-    margin-top: 10px;
-    width: 100vw;
-    height: 90vh;
+/* General Content Styling */
+.content {
+  padding: 20px;
+  text-align: center;
+  background-color: #004d61;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-    .about-img {
-        height: 70vh; /* Reduce height for tablets or medium screens */
-    }
+.cont-head {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-@media (max-width: 768px) {
-    .about-img {
-        height: 60vh; /* Further reduce height for smaller devices */
-    }
+/* About Section Styling */
+.about-desk {
+  padding: 25px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
 }
 
-@media (max-width: 480px) {
-    .about-img {
-        height: 50vh; /* Adjust height for small phones */
-    }
+.about-desk p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  text-align: justify;
 }
 
-@media (max-width: 320px) {
-    .about-img {
-        height: 40vh; /* Further adjustment for extra-small devices */
-    }
+/* Mission Row Grid Layout */
+.mission-row {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 30px;
+  margin-bottom: 20px;
+  padding: 11px;
+}
+
+.mission-desk {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid #ddd;
+}
+
+.mission-titl {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #004d61;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.mission-desk p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  text-align: justify;
+}
+
+/* Circular Ad Styling */
+.circular-ad {
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.circular-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+.circular-details p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #004d61;
+  margin-bottom: 15px;
+}
+
+.circular-details a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color:transparent;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 10px rgba(0, 123, 255, 0.2);
+  text-align: center;
+  width: 80%;
+}
+
+.circular-details a:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 86, 179, 0.3);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .mission-row {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-desk,
+  .circular-ad {
+    padding: 20px;
+  }
+
+  .circular-details a {
+    font-size: 0.95rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mission-desk p {
+    font-size: 0.95rem;
+  }
+
+  .circular-details a {
+    font-size: 0.85rem;
+    padding: 8px 15px;
+    width: 100%;
+  }
 }
