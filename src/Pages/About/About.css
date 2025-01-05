@@ -5,6 +5,7 @@
   background-color: #004d61;
   color: #fff;
   margin-bottom: 20px;
+  margin-top: 12px;
 }
 
 .cont-head {
@@ -16,14 +17,13 @@
 /* About Section Styling */
 .about-desk {
   padding: 25px;
-  background: linear-gradient(145deg, #e6e6e6, #ffffff);
   border-radius: 12px;
   border: 1px solid #ccc;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 25px;
 }
 
-.about-desk p {
+.about-desk .about-cont{
   font-size: 1rem;
   line-height: 1.7;
   color: #333;
@@ -36,7 +36,7 @@
   grid-template-columns: 3fr 2fr;
   gap: 30px;
   margin-bottom: 20px;
-  padding: 11px;
+  padding: 25px;
 }
 
 .mission-desk {
@@ -87,8 +87,8 @@
   align-items: center;
 }
 
-.circular-details p {
-  font-size: 1.3rem;
+.circular-details .circular-tit{
+  font-size:25px;
   font-weight: bold;
   color: #004d61;
   margin-bottom: 15px;
@@ -171,7 +171,7 @@
   }
 
   .mission-desk p {
-    font-size: 0.95rem;
+    font-size:12px;
   }
 
   .circular-ad {

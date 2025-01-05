@@ -9,7 +9,7 @@ const About = () => {
       </div>
 
       <div className="about-desk">
-        <p>
+        <p className="about-cont">
           --- The "Web Portal for Arul Anandar Incubation Center" project aims
           to develop a comprehensive online platform tailored to the needs of
           entrepreneurs and startups affiliated with the Arul Anandar Incubation
@@ -37,7 +37,7 @@ const About = () => {
 <div className="mission-row">
       <div className="mission-desk">
           <h4 className="mission-titl">Mission</h4>
-        <p>
+        <p className="mission-cont">
           ---  ArulAnandar Incubation center (AIC) was constituted in 2023 under the
           able guidance of Rev.Fr. Anbarasu SJ, (Principal, AAC) and Rev.Fr.
           Antonysamy SJ (Secretary,AAC) with due collaboration with IPR Cell and
@@ -52,10 +52,9 @@ const About = () => {
       </div>
       <div className="circular-ad">
         <div className="circular-details">
-          <p>circular</p>
+          <p className="circular-tit">circular</p>
         <Link>Invitation</Link>
         <Link>Competition</Link>
-        <Link>Invitation</Link>
         <Link>Invitation</Link>
         <Link>Invitation</Link>
         <Link>Invitation</Link>

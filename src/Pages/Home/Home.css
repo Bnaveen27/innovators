@@ -9,8 +9,8 @@
   }
   
   .carsu-logo {
-    width: 100vw;
-    height:80vh;
+    width:1920px;
+    height: 700px;;
   }
   @media (max-width: 1200px) {
     .home-cont {
@@ -92,7 +92,6 @@
     }
   
     .carsu-logo {
-      height: 70vh;
       margin-top: 6px;
   }
 
