@@ -1,10 +1,8 @@
-/* Navbar Container */
 .navbar-container {
   width: 100%;
   background: #f9f9f9;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -18,7 +16,6 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Left Section */
 .navbar-left {
   display: flex;
   align-items: center;
@@ -62,7 +59,6 @@
   margin: 0px;
 }
 
-/* Right Section */
 .navbar-right {
   display: flex;
   align-items: center;
@@ -73,7 +69,6 @@
   height: auto;
 }
 
-/* Responsive Menu Icon */
 .md\\:hidden {
   display: none;
 }
@@ -83,90 +78,8 @@
   color: #f1f1f1;
   cursor: pointer;
 }
-@media (max-width:1024px) {
 
-  .navbar-left .logo {
-    width: 65px;
-    height: auto;
-  }
-
-  .navbar-left .college-name {
-    font-size:17px;
-    font-weight: bold;
-    color: #f1f1f1;
-  }
   
-  .navbar-left .tagline {
-    margin: 0;
-    font-size:11px;
-    color: #e0e0e0;
-  }
-
-  .navbar-middle h2{
-    font-size: 20px;
-    margin-left: 20rem;
-  }
-
-  .navbar-right img.aaiclogo {
-    width: 65px;
-    height: auto;
-}
-  
-}
-
-/* Mobile Sidebar Menu */
-@media (max-width: 768px) {
-  .md\\:hidden {
-    display: block;
-  }
-  .navbar {
-    flex-direction: column;
-    align-items:center;
-  }
-  .navbar-left {
-    /* flex-direction: column; */
-    align-items: center;
-  }
- 
-  .navbar-left h2 {
-    font-size: 1rem;
-    padding-left: 0;
-  }
-  .navbar-right {
-    display: none;
-  }
-  .menu-sec {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  .menu-sec ul {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-  }
-  .menu-sec ul a {
-    font-size: 0.9rem;
-    padding: 10px;
-    text-align: center;
-  }
-  .menu-sec ul .li button {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-    background-color: #4b79a1;
-  }
-  .text-4xl {
-    display: block;
-  }
-}
-
-/* Show Menu when 'open' class is added */
-.menu-sec.open {
-  display: flex;
-}
-
 /* Main Menu */
 .menu-sec {
   background-color: #ffffff;
@@ -216,6 +129,35 @@
   background-color: #283e51;
   transform: translateY(-3px);
 }
+@media (max-width:1024px) {
+
+  .navbar-left .logo {
+    width: 65px;
+    height: auto;
+  }
+
+  .navbar-left .college-name {
+    font-size:17px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .navbar-left .tagline {
+    margin: 0;
+    font-size:11px;
+    color: #e0e0e0;
+  }
+
+  .navbar-middle h2{
+    font-size: 20px;
+    margin-left: 20rem;
+  }
+
+  .navbar-right img.aaiclogo {
+    width: 65px;
+    height: auto;
+}
+}
 
 /* Responsive Design (Adjustments for Small Screens) */
 @media (max-width: 768px) {
@@ -255,9 +197,7 @@
   }
 }
 
-/* Media Query for 320px to 340px */
 @media (max-width: 340px) {
-  /* Navbar Adjustments */
   .navbar {
     padding: 10px;
     flex-direction: column;
@@ -288,7 +228,6 @@
     height: auto;
   }
 
-  /* Menu Section Adjustments */
   .menu-sec ul {
     gap: 8px;
   }
@@ -303,7 +242,6 @@
     padding: 5px 10px;
   }
 
-  /* Reduce Gaps */
   .menu-sec ul {
     gap: 6px;
   }
@@ -317,7 +255,6 @@
     font-size: 0.8rem;
   }
 
-  /* Adjust Font Sizes */
   .college-name {
     font-size: 1rem;
   }
@@ -330,7 +267,6 @@
     font-size: 1.8rem;
   }
 
-  /* Improve Padding */
   .navbar {
     padding: 8px 10px;
   }
