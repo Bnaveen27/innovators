@@ -14,12 +14,11 @@ import "./App.css";
 import Footer from "./Components/Footer/Footer";
 
 const App = () => {
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false); 
-    }, 3000);
+    const timer = setTimeout(() => setLoading(false), 3000); 
+    return () => clearTimeout(timer);
   }, []);
 
   const NavbarWithImage = () => (
