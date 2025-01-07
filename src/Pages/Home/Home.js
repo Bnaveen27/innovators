@@ -1,5 +1,5 @@
 import React from 'react'
-import bg from "../../Assets/bg.jpg";
+import bg from "../../Assets/Images/bg.jpg";
 import './Home.css';
 const Home = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import headFoto from '../../Assets/codadi.jpg'
-import headLine from '../../Assets/border_img.png'
+import headFoto from '../../Assets/Images/codadi.jpg'
+import headLine from '../../Assets/Images/border_img.png'
 import "./Members.css";
 
 const Members = () => {
@@ -17,7 +17,7 @@ const Members = () => {
     <div className="incubation-content">
        <div className="incubation-committee">
         <h2 className="incub-head">INCUBATION MEMBER</h2>
-         <span><img src={headLine} alt='______' className="title_border"/></span>
+         <img src={headLine} alt='______' className="title_border"/>
        </div>
 
       <div className="img-field">
