@@ -45,7 +45,7 @@ const Navbar = () => {
           <Link to="/Gallery" className="li">
             Gallery
           </Link>
-          <Link to="/Reports" className="li">
+          <Link to="/AdminPage" className="li">
             Reports
           </Link>
           <button className="admin-log">
@@ -72,7 +72,7 @@ const Navbar = () => {
             <Link to="/Gallery">Gallery</Link>
           </li>
           <li>
-            <Link to="/Reports">Reports</Link>
+            <Link to="/AdminPage">Reports</Link>
           </li>
           <li>
             <button className="admin-log">

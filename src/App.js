@@ -6,7 +6,7 @@ import Gallery from "./Pages/Gallery/Gallery";
 import Contactus from "./Pages/Contactus/Contactus";
 import Login from "../src/Pages/Login/Login";
 import Signup from "./Pages/Registration/Signup";
-import Report from "./Pages/Report/Reports";
+// import Report from "./Pages/Report/Reports";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import SplashScreen from "./Pages/SplashScreen/SplashScreen";
@@ -44,7 +44,7 @@ const App = () => {
             <Route path="/About" element={<About />} />
             <Route path="/Members" element={<Members />} />
             <Route path="/Gallery" element={<Gallery />} />
-            <Route path="/Report" element={<Report />} />
+            {/* <Route path="/Report" element={<AdminPage/>} /> */}
             <Route path="/Contactus" element={<Contactus />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/Feedback" element={<Feedback/>} />
