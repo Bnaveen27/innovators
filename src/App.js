@@ -9,15 +9,17 @@ import Signup from "./Pages/Registration/Signup";
 import Report from "./Pages/Report/Reports";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
-import SplashScreen from "./Pages/SplashScreen/SplashScreen"; 
+import SplashScreen from "./Pages/SplashScreen/SplashScreen";
 import "./App.css";
 import Footer from "./Components/Footer/Footer";
-
+import AdminPage from "./Components/AdminPage/AdminPage";
+import Feedback from "./Pages/Feedback/Feedback";
+import UploadFile from "./Pages/UploadFiles/UploadFile";
 const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 3000); 
+    const timer = setTimeout(() => setLoading(false), 3000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -33,7 +35,7 @@ const App = () => {
   return (
     <div className="overflow-x-hidden">
       {loading ? (
-        <SplashScreen /> 
+        <SplashScreen />
       ) : (
         <Router>
           <Routes>
@@ -45,11 +47,13 @@ const App = () => {
             <Route path="/Report" element={<Report />} />
             <Route path="/Contactus" element={<Contactus />} />
             <Route path="/Login" element={<Login />} />
+            <Route path="/Feedback" element={<Feedback/>} />
+            <Route path="/AdminPage" element={<AdminPage/>} />
+            <Route path="/UploadFile" element={<UploadFile/>} />
             <Route path="/Registration" element={<Signup />} />
           </Routes>
-      <Footer/>
+          <Footer />
         </Router>
-        
       )}
     </div>
   );

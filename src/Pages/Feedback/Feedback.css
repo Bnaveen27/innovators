@@ -1,0 +1,132 @@
+.feed-container {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  width: 100%;
+}
+
+.heading {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.feed-title {
+  font-size: 2rem;
+  color: #444;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.feedback-table {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  background-color: #f8f9fa;
+}
+
+.feedback-table th,
+.feedback-table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+.suggestions {
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.suggestions p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.suggestions textarea {
+  width: 100%;
+  height: 100px;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.suggestions button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.suggestions button:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .heading {
+    padding: 15px;
+    font-size: 1.5rem;
+  }
+
+  .feed-title {
+    font-size: 1.5rem;
+  }
+
+  .feedback-table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .feedback-table th,
+  .feedback-table td {
+    padding: 0.5rem;
+  }
+
+  .suggestions {
+    width: 100%;
+  }
+
+  .suggestions textarea {
+    height: 80px;
+    padding: 0.4rem;
+  }
+
+  .suggestions button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .feed-title {
+    font-size: 1.2rem;
+  }
+
+  .feedback-table th,
+  .feedback-table td {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+  }
+
+  .suggestions textarea {
+    height: 70px;
+    padding: 0.3rem;
+  }
+
+  .suggestions button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}

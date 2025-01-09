@@ -14,6 +14,9 @@
   font-weight: bold;
   animation: fadeIn 1s ease-in-out;
 }
+.splash-screen img{
+  width: 10%;
+}
 
 @keyframes fadeIn {
   0% {

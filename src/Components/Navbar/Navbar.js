@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-
 import aaicLogo from "../../Assets/Images/aic.png";
 import aacLogo from "../../Assets/Images/logo_small.png";
 

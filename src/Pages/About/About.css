@@ -23,12 +23,12 @@
 }
 
 .about-desk .about-cont{
-  font-family: serif;
-  font-size: 1rem;
-  line-height: 1.7;
+  font-family:serif;
+  font-size: 18px;
+  line-height: 2.2;
   color: #333;
-  text-indent: 45px;
   text-align: justify;
+  text-indent: 5rem;
 }
 
 .mission-row {
@@ -60,11 +60,13 @@
   text-align: center;
 }
 
-.mission-desk p {
-  font-size: 1rem;
-  line-height: 1.7;
+.mission-cont {
+  font-family:serif;
+  font-size: 18px;
+  line-height: 2.2;
   color: #333;
   text-align: justify;
+  text-indent: 5rem;
 }
 
 .circular-ad {
@@ -106,81 +108,257 @@
   transition: all 0.3s ease-in-out;
   box-shadow: 0 3px 10px rgba(0, 123, 255, 0.2);
   text-align: center;
-  width: 80%;
+  width: 65%;
 }
 
 .circular-details a:hover {
-  background-color: #0056b3;
+  background-color: #35d0d2;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 86, 179, 0.3);
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .mission-row {
-    grid-template-columns: 1fr;
+.objectives {
+  padding: 20px;
+}
+
+.object-details {
+  font-family:serif;
+  font-size: 1rem;
+  line-height: 2.2;
+  color: #333;
+  text-align: justify;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ddd;
+}
+
+.obj-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #004d61;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.obj-content {
+  font-family:serif;
+  font-size: 18px;
+  line-height: 2.2;
+  color: #333;
+  text-align: justify;
+  text-indent: 5rem;
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .content {
+    padding: 20px;
   }
 
-  .mission-desk,
+  .cont-head {
+    font-size: 1.8rem;
+  }
+
+  .about-desk {
+    padding: 25px;
+    margin: 0 30px;
+  }
+
+  .about-desk .about-cont {
+    font-size: 18px;
+    text-indent: 4rem;
+  }
+
+  .mission-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 25px;
+  }
+
+  .mission-desk {
+    padding: 20px;
+    text-indent: 40px;
+  }
+
+  .mission-titl {
+    font-size: 1.6rem;
+  }
+
+  .mission-cont {
+    font-size: 18px;
+    text-indent: 4rem;
+  }
+
   .circular-ad {
     padding: 20px;
   }
 
-  .circular-details a {
-    font-size: 0.95rem;
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .mission-desk p {
-    font-size: 0.95rem;
+  .circular-details .circular-tit {
+    font-size: 24px;
   }
 
   .circular-details a {
-    font-size: 0.85rem;
-    padding: 8px 15px;
-    width: 100%;
+    font-size: 1.1rem;
+    padding: 14px 20px;
+  }
+
+  .objectives {
+    padding: 20px;
+  }
+
+  .object-details {
+    padding: 20px;
+  }
+
+  .obj-title {
+    font-size: 1.6rem;
+  }
+
+  .obj-content {
+    font-size: 18px;
+    text-indent: 4rem;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 340px) {
+
+@media screen and (min-width: 320px) and (max-width: 370px) {
   .content {
     padding: 15px;
-    margin-top: 8px;
   }
 
   .cont-head {
-    font-size: 15px;
+    font-size: 1.4rem;
   }
 
   .about-desk {
-    padding: 20px;
+    padding: 15px;
+    margin: 0 15px;
+  }
+
+  .about-desk .about-cont {
+    font-size: 16px;
+    text-indent: 2rem;
   }
 
   .mission-row {
     grid-template-columns: 1fr;
-    gap: 20px;
+    padding: 15px;
   }
 
   .mission-desk {
     padding: 15px;
+    text-indent: 30px;
   }
 
   .mission-titl {
     font-size: 1.4rem;
   }
 
-  .mission-desk p {
-    font-size:12px;
+  .mission-cont {
+    font-size: 16px;
+    text-indent: 2rem;
   }
 
   .circular-ad {
     padding: 15px;
   }
 
+  .circular-details .circular-tit {
+    font-size: 20px;
+  }
+
   .circular-details a {
     font-size: 0.9rem;
-    width: 90%;
+    padding: 10px 15px;
+  }
+
+  .objectives {
+    padding: 15px;
+  }
+
+  .object-details {
+    padding: 15px;
+  }
+
+  .obj-title {
+    font-size: 1.4rem;
+  }
+
+  .obj-content {
+    font-size: 16px;
+    text-indent: 2rem;
   }
 }
+
+@media screen and (min-width: 371px) and (max-width: 425px) {
+  .content {
+    padding: 18px;
+  }
+
+  .cont-head {
+    font-size: 1.6rem;
+  }
+
+  .about-desk {
+    padding: 20px;
+    margin: 0 20px;
+  }
+
+  .about-desk .about-cont {
+    font-size: 17px;
+    text-indent: 3rem;
+  }
+
+  .mission-row {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .mission-desk {
+    padding: 20px;
+    text-indent: 35px;
+  }
+
+  .mission-titl {
+    font-size: 1.5rem;
+  }
+
+  .mission-cont {
+    font-size: 17px;
+    text-indent: 3rem;
+  }
+
+  .circular-ad {
+    padding: 18px;
+  }
+
+  .circular-details .circular-tit {
+    font-size: 22px;
+  }
+
+  .circular-details a {
+    font-size: 1rem;
+    padding: 12px 18px;
+  }
+
+  .objectives {
+    padding: 18px;
+  }
+
+  .object-details {
+    padding: 18px;
+  }
+
+  .obj-title {
+    font-size: 1.5rem;
+  }
+
+  .obj-content {
+    font-size: 17px;
+    text-indent: 3rem;
+  }
+}
+
+
+
+
