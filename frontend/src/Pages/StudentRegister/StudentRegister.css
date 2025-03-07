@@ -1,0 +1,168 @@
+.register-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(135, 206, 250, 0.5), rgba(30, 144, 255, 0.5));
+  backdrop-filter: blur(10px);
+}
+
+.register-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.header-left img {
+  width: 70px;
+  height: auto;
+}
+
+.header-title h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.register-fields {
+  margin-top: 50px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  margin-bottom: 20px;
+}
+
+.form-input label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  display: block;
+}
+
+.form-input input,
+.form-input select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-input input:focus,
+.form-input select:focus {
+  outline: none;
+  border-color: #2980b9;
+}
+
+.register-btn {
+  background-color: #2980b9;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #3498db;
+}
+
+.register-btn:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .register-header {
+      flex-direction: column;
+      text-align: center;
+      padding: 15px;
+  }
+  
+  .header-left img {
+      margin-bottom: 10px;
+  }
+  
+  .register-fields {
+      padding: 25px;
+      max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .register-fields {
+      padding: 20px;
+      max-width: 350px;
+  }
+  
+  .header-title h2 {
+      font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .register-header {
+      padding: 10px;
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .register-fields {
+      padding: 15px;
+      max-width: 300px;
+  }
+  
+  .form-input label {
+      font-size: 14px;
+  }
+  
+  .form-input input, .form-input select {
+      padding: 10px;
+      font-size: 14px;
+  }
+  
+  .register-btn {
+      padding: 10px;
+      font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .register-header {
+      padding: 10px;
+  }
+  
+  .header-title h2 {
+      font-size: 20px;
+  }
+  
+  .register-fields {
+      padding: 10px;
+      max-width: 280px;
+  }
+  
+  .form-input label {
+      font-size: 14px;
+  }
+}
